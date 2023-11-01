@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exams Scheduled</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("6C-XcXD-aXi3rXP9q");
+      })();
+    </script>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="resultpage.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">LOGO</h2>
+      <span><ion-icon class="person" name="person-circle"></ion-icon></span>
+    </header>
+    <!-- <div class="welcome_msg">
+      <h1>Welcome Aswin !!</h1>
+    </div> -->
+
+    <div>
+      <div class="tabs-container">
+        <div class="tabs-block">
+          <div class="tabs">
+            <input type="radio" name="tabs" id="tab1" checked="checked" />
+            <label for="tab1"
+              ><span class="material-icons">contacts</span> Profile</label
+            >
+            <div class="tab">
+              <h4 id="dataElement1">Name :</h4>
+              <h4 id="dataElement2">Institution :</h4>
+              <h4 id="dataElement3">Branch :</h4>
+            </div>
+
+            <input type="radio" name="tabs" id="tab2" />
+            <label for="tab2"
+              ><span class="material-icons">folders</span>Upcoming Exam</label
+            >
+            <div class="tab">
+              <h2>Upcoming Exam</h2>
+              <h4 id="dataElement4">Date:</h4>
+              <h4 id="dataElement5">Time:</h4>
+              <h4 id="dataElement6">College:</h4>
+              <h4 id="dataElement61">Subject:</h4>
+              <h4 id="dataElement7">Branch:</h4>
+            </div>
+
+            <input type="radio" name="tabs" id="tab3" />
+            <label for="tab3"
+              ><span class="material-icons">announcement</span>Exam
+              Schedule</label
+            >
+            <div class="tab">
+              <h2>Exam Schedule</h2>
+              <h4 id="dataElement8">20-07-2023 @</h4>
+              <h4 id="dataElement9">..........</h4>
+              <h4 id="dataElement10">..........</h4>
+              <h4 id="dataElement11">..........</h4>
+              <h4 id="dataElement12">..........</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="resultpage.js" type="module"></script>
+</html>

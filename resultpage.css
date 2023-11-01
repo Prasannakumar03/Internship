@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 2.5cm; */
+  background: rgb(239, 231, 231);
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 2em;
+  user-select: none;
+  color: #162938;
+}
+
+/* .welcome_msg {
+  display: flex;
+  justify-content: left;
+  padding-top: 3cm;
+  font-size: 10px;
+} */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("img/jess-bailey-q10VITrVYUM-unsplash.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  position: relative;
+  width: 900px;
+  height: 300px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .form-box {
+  width: 100%;
+  padding: 40px;
+}
+
+.form-box h2 {
+  font-size: 2em;
+  color: #162938;
+  text-align: center;
+}
+
+/**
+ * Reset
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* font-family: sans-serif; */
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  color: #1a1a1a;
+  /* font-family: "Source Sans Pro", sans-serif; */
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+form,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: large;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+/**
+  * Global Rules
+  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #162938;
+  /* font-family: Roboto, sans-serif; */
+  line-height: 0, 3;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+a,
+a:visited {
+  background-color: transparent;
+  color: #162938;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+a:hover,
+a:active {
+  border-bottom: none;
+  outline: 0;
+}
+
+a:focus {
+  border-bottom: none;
+  outline: thin dotted;
+}
+
+a img {
+  border: 0;
+}
+
+footer .credits {
+  font-size: 1rem;
+}
+
+/**
+  * Tabs Container
+  */
+.tabs-container {
+  padding: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+/**
+  * Tabs Block
+  */
+.tabs-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/**
+  * Tabs
+  */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tabs label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  margin-right: 0.0625rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  /* font-family: Roboto, sans-serif; */
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color ease 0.3s;
+}
+
+.tabs label .material-icons {
+  margin-right: 0.3rem;
+}
+
+.tabs .tab {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  display: none;
+  padding: 1rem 2rem;
+  color: #000;
+  background-color: transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.tabs .tab > *:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+.tabs [type="radio"] {
+  display: none;
+}
+
+.tabs [type="radio"]:checked + label {
+  background-color: #fff;
+  color: #162938;
+  border-top: 4px solid #162938;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.tabs [type="radio"]:checked + label + .tab {
+  display: block;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  .tabs-container {
+    padding: 4rem 4rem;
+  }
+
+  .tabs label {
+    order: 1;
+    width: auto;
+  }
+
+  .tabs .tab {
+    order: 9;
+  }
+
+  .tabs [type="radio"]:checked + label {
+    border-bottom: none;
+  }
+}
+@media (min-width: 992px) {
+  .tabs {
+    width: 800px;
+  }
+}
